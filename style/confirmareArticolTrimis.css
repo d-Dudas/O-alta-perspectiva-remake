@@ -1,0 +1,90 @@
+#confirmBox {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    width: 65%;
+    height: 60vh;
+}
+
+#confirmBoxContent {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 90%;
+    background: rgba(211,211,211,0.32);
+    background-blend-mode: normal;
+    border-radius: 0px 0px 50px 50px;
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
+}
+
+#confirmBoxContent p {
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    font-size: 3vmin;
+    color: white;
+    text-align: center;
+}
+
+#confirmBoxContent a {
+    width: 40%;
+    border-radius: 30px;
+    height: 6vh;
+    font-size: 1.7vmin;
+    font-family: 'Domine', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.164);
+    transition: 1s all;
+    background: #aa9583bb;
+    background-blend-mode: normal;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+}
+
+#confirmBoxContent a:hover {
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.164);
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.164);
+    width: 41%;
+    background: #aa9583;
+    background-blend-mode: normal;
+}
+#informatiiGenerale {
+    position: absolute;
+    top: 23vh;
+    right: 2vw;
+    width: 25%;
+    height: 72vh;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(211,211,211,0.7) 100%);
+    background-blend-mode: normal;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#informatiiGenerale p{
+    text-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    color: #313131;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vmin;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 10%;
+}

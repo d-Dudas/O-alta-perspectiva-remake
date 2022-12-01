@@ -1,0 +1,347 @@
+body {
+    background: rgb(216,190,167);
+    background: linear-gradient(90deg, rgba(216,190,167,1) 0%, rgba(182,149,124,1) 50%, rgba(216,190,167,1) 100%) !important;
+}
+
+#article {
+    position: absolute;
+    top: 32vh;
+    left: 5vw;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.63);
+    background-blend-mode: normal;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#articleTitle {
+    height: 10vmin;
+    border-bottom: 1px solid grey;
+}
+
+#articleTitle h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5vmin;
+    font-family: 'Domine', serif;
+    text-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+}
+
+#posterImage {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin-top: 5%;
+    max-height: 50vh;
+    min-height: 50vh;
+}
+
+#posterImage img {
+    position: relative;
+    width: 100%;
+    max-height: 50vh;
+    min-height: 50vh;
+    object-fit: contain;
+}
+
+#articleText {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    font-family: 'Domine', serif;
+    font-size: 2.5vmin;
+}
+
+#articleDetails {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid grey;
+    font-family: 'Domine', serif;
+    font-size: 1.5vmin;
+}
+
+#vizualizari {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#comments {
+    position: fixed;
+    top: 32vh;
+    right: 2vw;
+    width: 25%;
+    height: 60vh;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(211,211,211,0.7) 100%);
+    background-blend-mode: normal;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
+}
+
+#commentText {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid grey;
+}
+
+#commentText h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: 'Domine', serif;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+#writeComment {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+#writeComment label[for=comment] {
+    width: 90%;
+}
+
+#comment {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: none;
+    font-size: 1.7vmin;
+    padding: 3%;
+    border: none;
+    border-radius: 36px;
+}
+
+#comment, textarea {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#writeComment label[for=send] {
+    width: 10%;
+}
+
+#writeComment label[for=send] button {
+    background-color: none;
+    background: none;
+    border: none;
+}
+
+#commentsList {
+    height: 75%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+
+#commentsList h1 {
+    position: relative;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.comment {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentUsername {
+    margin: 2%;
+    font-family: 'Domine', serif;
+    font-size: 1.5vmin;
+    color: rgba(59, 59, 59, 0.514);
+}
+
+.commentText {
+    margin: 2%;
+    font-family: 'Domine', serif;
+    font-size: 1.7vmin;
+    color: rgba(46, 45, 45, 0.699);
+}
+
+.commentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+.deleteCommentBtn {
+    width: 10%;
+    height: 100%;
+}
+
+.deleteCommentBtn a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.deleteCommentIcon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.deleteCommentIcon:hover {
+    color: red !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 110%;
+    position: fixed;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f111;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(190, 190, 190);
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* CSS for admin tools: delete, edit article */
+
+#adminButtons {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+
+    width: 10%;
+    height: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#deleteArticleButton {
+    background: none;
+    border: none;
+}
+
+#deleteArticleButton:hover {
+    cursor: pointer;
+}
+
+#confirmDeleteBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+
+    width: 25vw;
+    height: 15vh;
+    background-color: rgb(238, 238, 238, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: -5px 5px 6px rgba(0, 0, 0, 0.459);
+
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+#confirmDeleteBox p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3vmin;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#confirmDeleteBox button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#confirmDeleteBox input[type="submit"] {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#confirmDeleteBox button, #confirmDeleteBox input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 30%;
+
+    background-color: rgba(255, 255, 255, 0.568);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    font-size: 2vmin;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-weight: 500;
+
+    cursor: pointer;
+    border: none;
+}
+
+#confirmDeleteBox button:hover, #confirmDeleteBox input[type="submit"]:hover {
+    background-color: white;
+}
+
+
+

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#confirmBox {
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(175,154,135,0.77) 100%);
+    background-blend-mode: normal;
+    box-shadow: 5px 10px 4px rgba(100,100,100,0.5);
+}
+
+#items {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    margin: 0% 10%;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 6vmin;
+    text-align: center;
+}
+
+#emailSentIconBox {
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+h2 {
+    width: 50%;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 2.5vmin;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    margin-top: 10vmin;
+    width: 15vw;
+    height: 8vh;
+    padding: 0% 10%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ffffffcc 0%, #d3d3d3be 100%);
+    background-blend-mode: normal;
+    box-shadow: 10px 6px 4px rgba(100,100,100,0.5);
+    justify-content: center;
+    align-items: center;
+    transition: 2s all;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+a {
+    text-decoration: none;
+    font-size: 2vmin;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(63, 63, 63);
+    transition: 1s all;
+}
+
+button:hover {
+    box-shadow: 15px 10px 4px rgba(100,100,100,0.6);
+    background: linear-gradient(135deg, #ffffff 0%, #d3d3d3 100%);
+}
+  
+a:hover {
+    text-shadow: 6px 4px 4px rgba(100,100,100,0.5);
+}

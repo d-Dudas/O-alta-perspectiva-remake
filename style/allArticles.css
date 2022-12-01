@@ -1,0 +1,96 @@
+body {
+    background: rgb(216,190,167);
+    background: linear-gradient(90deg, rgba(216,190,167,1) 0%, rgba(182,149,124,1) 50%, rgba(216,190,167,1) 100%) !important;
+    height: 110vh !important;
+}
+
+#articlesBox {
+    position: absolute;
+    top: 35vh;
+    left: 5vw;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.articleBox {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+
+.articles {
+    position: relative;
+    width: 90% !important;
+    height: 90% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 15px 5px rgba(100,100,100,0.5);
+    overflow: hidden;
+}
+
+.articlePreview {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 90%;
+    transition: 1.5s all;
+}
+
+.articlePreview:hover {
+    top: 0px;
+}
+
+.articleTitle {
+    position: relative;
+    height: 12% !important;
+    width: 100% !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5vmin;
+    background: linear-gradient(0deg, #d6d6d6 0%, #ffffff88 100%);
+    background-blend-mode: normal;
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    box-shadow: 0px 10px 6px rgba(100,100,100,0.5);
+    z-index: 5;
+    transition: 1s all;
+    text-align: center;
+}
+
+.articleText {
+    background: linear-gradient(0deg, #ffffff63 100%, #d6d6d6 0%);
+    background-blend-mode: normal;
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 110%;
+    position: fixed;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f111;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(190, 190, 190);
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
