@@ -45,12 +45,9 @@
 
 }
 
-a {
+#navBarButtons a {
     text-decoration: none;
     color: black;
-}
-
-#navBarButtons a {
     position: relative;
     width: 30%;
     height: 90%;

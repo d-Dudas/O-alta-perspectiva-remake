@@ -229,6 +229,7 @@ form label[for = 'pwdR'] {
 #textBox {
   top: 15%;
   left: 5%;
+  transition: 1s all;
 }
 
 #textBox * {
@@ -330,6 +331,7 @@ form label[for = 'pwdR'] {
 @media only screen and (min-width: 10px) and (max-width: 1000px) {
   #slideBar {
     display: none;
+    bottom: 100%;
   }
 
   #socialPlatforms {
@@ -405,6 +407,20 @@ form label[for = 'pwdR'] {
     font-family: 'Spectral', serif;
     font-size: 10vmin;
 
+  }
+
+  #slideBar {
+    top: -300vh;
+    width: 100%;
+    right: auto;
+  }
+
+  #login {
+    width: 90%;
+  }
+
+  #register {
+    width: 90%;
   }
 
 }
