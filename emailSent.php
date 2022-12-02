@@ -8,12 +8,12 @@
     <!-- CSS for this page -->
     <link rel="stylesheet" href="./style/emailSent.css">
     <?php 
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
     <?php
-        include './background.php';
+        include './background.html';
     ?>
     <div id="confirmBox">
         <div id="items">

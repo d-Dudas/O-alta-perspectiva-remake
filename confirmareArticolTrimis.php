@@ -8,15 +8,15 @@
     <!-- CSS for confirmareArticolTrimis page -->
     <link rel="stylesheet" href="style/confirmareArticolTrimis.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
     
 </head>
 <body>
-    <?php
-        include './navBar.php';
+<?php
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="confirmBox">
         <div id="confirmBoxContent">

@@ -15,16 +15,16 @@
             die();
         }        
 
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 
 </head>
 
 <body>
     <?php
-        include './navBar.php';
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="formBox">
         <form id="changePasswordForm" method="POST" action="./includes/changePassword.inc.php">

@@ -14,14 +14,14 @@
     <!-- CSS for articol.php -->
     <link rel="stylesheet" href="./style/article.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
     <?php
         include "./accountSystemButtons.php";
-        include "./background.php";
-        include './navBar.php';
+        include "./background.html";
+        include './navBar.html';
         include "./includes/manageArticles.php";
 
         if(!in_array($id,$_SESSION['seenArticles'])) {

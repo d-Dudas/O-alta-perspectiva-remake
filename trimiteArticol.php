@@ -8,14 +8,14 @@
     <!-- CSS for trimiteArticol page -->
     <link rel="stylesheet" href="style/trimiteArticol.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
     <?php
-        include './navBar.php';
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="sendArticleBox">
         <form method = "POST" action="./includes/sendArticle.inc.php" id="sendArticleForm" enctype="multipart/form-data">

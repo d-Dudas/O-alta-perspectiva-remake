@@ -8,14 +8,14 @@
     <!-- CSS for thiss page -->
     <link rel="stylesheet" href="style/contacteaza-ne.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
     <?php
-        include './navBar.php';
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="contactBox">
         <form method = "POST" action="./includes/sendMessage.inc.php" id="contactForm">

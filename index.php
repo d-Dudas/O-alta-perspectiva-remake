@@ -9,7 +9,7 @@
     <!-- CSS for landing page -->
     <link rel="stylesheet" href="style/landingPage.css">
     <?php 
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 
@@ -25,14 +25,14 @@
             }
 
         }
-        include "./background.php";
+        include "./background.html";
         if(isset($GET["login"])) {
             echo '<input type = "hidden" id="ifLogin" value = "true"/>';
         }
         if(isset($GET["register"])) {
                 echo '<input type = "hidden" id="ifRegister" value = "true"/>';
         }
-        include './navBarMobile.php';
+        include './navBarMobile.html';
     ?>
     <div id="slideBar">
         <img id="landingPageImage" src="./images/landingPageSideIllustration.png" alt="A lamp to make your day shine.">
@@ -187,7 +187,7 @@
     </div>
 
     <?php
-        include './footer.php';
+        include './footer.html';
     ?>
 </body>
 <script src="./javascript/login.js"></script>

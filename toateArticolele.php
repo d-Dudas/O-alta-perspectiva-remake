@@ -13,14 +13,14 @@
     <!-- News for home page -->
     <link rel="stylesheet" href="style/news.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
     <?php
-        include './navBar.php';
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="articlesBox">
         <?php
@@ -63,7 +63,7 @@
     </div>
 </body>
 <?php
-        include './footer.php';
+        include './footer.html';
 ?>
 <script src="./javascript/allArticlesPage.js"></script>
 <!-- Account system buttons javascript -->

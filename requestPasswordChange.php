@@ -9,15 +9,15 @@
     <!-- CSS for requestchangePassword page -->
     <link rel="stylesheet" href="style/requestChangePassword.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 
 <body>
     <?php
-        include './navBar.php';
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="formBox">
         <form id="requestChangePasswordForm" method="POST" action="./includes/sendChangePasswordMail.inc.php">

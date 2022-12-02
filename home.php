@@ -13,14 +13,14 @@
     <!-- News for home page -->
     <link rel="stylesheet" href="style/news.css">
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 <body>
-    <?php
-        include './navBar.php';
+<?php
+        include './navBar.html';
         include "./accountSystemButtons.php";
-        include "./background.php";
+        include "./background.html";
     ?>
     <div id="articles">
         <div id="mostRecentArticle">
@@ -79,7 +79,7 @@
         </div>
     </div>
     <?php
-        include './footer.php';
+        include './footer.html';
     ?>
 </body>
 <script src="./javascript/homePage.js"></script>

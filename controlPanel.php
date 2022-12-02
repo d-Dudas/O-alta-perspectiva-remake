@@ -13,15 +13,15 @@
     <!-- CKEditor script -->
     <script src="./javascript/ckeditor5-build-classic/ckeditor.js"></script>
     <?php
-        include './importantLinks.php';
+        include './importantLinks.html';
     ?>
 </head>
 
 <body>
     <?php
         include './accountSystemButtons.php';
-        include './navBar.php';
-        include './background.php';
+        include './navBar.html';
+        include './background.html';
         include './includes/controlPanelFunctions.inc.php';
         if(isset($_SESSION['ifAdmin'])){
             if($_SESSION['ifAdmin'] == 0){
