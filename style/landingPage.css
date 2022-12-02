@@ -12,6 +12,8 @@ body {
   height: 100vh;
 }
 
+/* CSS FOR DESKTOP */
+
 #slideBar {
   width: 38vw;
   position: fixed;
@@ -226,7 +228,7 @@ form label[for = 'pwdR'] {
 
 #textBox {
   top: 15%;
-  left: 5% !important;
+  left: 5%;
 }
 
 #textBox * {
@@ -321,4 +323,88 @@ form label[for = 'pwdR'] {
 #linkToRenewPassword:hover {
   text-decoration: underline;
   text-shadow: 0px 0px 5px white;
+}
+
+/* CSS FOR MOBILE */
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+  #slideBar {
+    display: none;
+  }
+
+  #socialPlatforms {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  #textBox {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 60%;
+    font-family: 'Spectral', serif;
+  }
+
+  #textBox * {
+    margin: 0px;
+  }
+
+  #textBox h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Spectral', serif;
+    font-size: 15vmin;
+    font-weight: 300;
+    line-height: 12vw;
+  }
+
+  #textBox h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Spectral', serif;
+    font-size: 5vmin;
+    font-weight: 100;
+    line-height: 5vh;
+  }
+
+  #textBox button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 12%;
+  }
+
+  #textBox button a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Spectral', serif;
+    font-size: 10vmin;
+
+  }
+
 }

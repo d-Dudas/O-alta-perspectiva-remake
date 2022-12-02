@@ -84,3 +84,11 @@
 #loginBtn:hover {
     right: -5%;
 }
+
+/* CSS FOR MOBILE */
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+    #buttons {
+        display: none;
+    }
+}

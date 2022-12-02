@@ -32,6 +32,7 @@
         if(isset($GET["register"])) {
                 echo '<input type = "hidden" id="ifRegister" value = "true"/>';
         }
+        include './navBarMobile.php';
     ?>
     <div id="slideBar">
         <img id="landingPageImage" src="./images/landingPageSideIllustration.png" alt="A lamp to make your day shine.">
@@ -59,12 +60,13 @@
                         </div>';   
                     }
                 ?>
-                <div id="pwdBox" class = "errorEffect">
+                <div id="pwdBox" class="errorEffect">
                     <label for="pwd">
                         <input class="inputs" type="password" name="pwd" id="pwd" placeholder="Parolă..." maxlength=15>
                     </label>
                     <div id="pwdEye">
-                        <iconify-icon id="pwdEyeIcon" icon="clarity:eye-hide-line" style="color: grey; font-size: 1.5rem">
+                        <iconify-icon id="pwdEyeIcon" icon="clarity:eye-hide-line"
+                            style="color: grey; font-size: 1.5rem">
                     </div>
                 </div>
                 <?php
@@ -117,7 +119,8 @@
                 <label for="pwdR">
                     <input class="inputs" type="password" name="pwdR" id="pwdR" placeholder="Parolă..." maxlength=15>
                     <div id="pwdEyeR">
-                        <iconify-icon id="pwdEyeIconR" icon="clarity:eye-hide-line" style="color: grey; font-size: 1.5rem">
+                        <iconify-icon id="pwdEyeIconR" icon="clarity:eye-hide-line"
+                            style="color: grey; font-size: 1.5rem">
                     </div>
                 </label>
                 <div id="pwdConditions">
@@ -183,11 +186,16 @@
         </a>
     </div>
 
+    <?php
+        include './footer.php';
+    ?>
 </body>
 <script src="./javascript/login.js"></script>
 <script src="./javascript/register.js"></script>
 <script src="./javascript/indexPage.js"></script>
 <!-- Account system buttons javascript -->
-<script src="javascript/accountSystemButtons.js"></script>
+<script src="./javascript/accountSystemButtons.js"></script>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 
 </html>

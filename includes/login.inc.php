@@ -37,9 +37,9 @@ if(isset($_POST['email'])){
                 die();
             }
 
-            $u = $u['username'];
             $id = $u['id'];
             $ifAdmin = $u['ifAdmin'];
+            $u = $u['username'];
 
             session_start();
             $_SESSION['username'] = $u;

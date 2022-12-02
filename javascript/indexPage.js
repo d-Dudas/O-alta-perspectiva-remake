@@ -15,3 +15,7 @@ $("#textBox").children("h1")  .on("click", () => {
 
 if(window.location.search.substring(1).includes("login=show")) setTimeout(() => {$("#slideBar").css("top", "-100vh");}, 500);
 if(window.location.search.substring(1).includes("register=show")) setTimeout(() => {$("#slideBar").css("top", "-200vh");}, 500);
+
+if(window.matchMedia("(max-width: 1000px)")) {
+    console.log("This is a mobile device.")
+}

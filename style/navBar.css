@@ -1,4 +1,4 @@
-#textBox {
+#navnavTextBox {
     position: absolute;
     color: white;
     width: 100vw;
@@ -6,7 +6,7 @@
     left: 2vw;
 }
   
-#textBox h1 a{
+#navnavTextBox h1 a{
     font-size: 10vmin;
     font-family: 'Sawarabi Gothic', sans-serif;
     text-shadow: 10px 8px 4px rgba(100,100,100,0.5);
@@ -14,7 +14,7 @@
     text-decoration: none;
 }
   
-#textBox h2 {
+#navnavTextBox h2 {
     font-size: 4vmin;
     font-family: 'Big Shoulders Stencil Display', cursive;
     color:rgba(248, 248, 248, 0.4);

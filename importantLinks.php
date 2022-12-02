@@ -1,5 +1,7 @@
 <!-- CSS for navBar -->
 <link rel="stylesheet" href="./style/navBar.css">
+<!-- CSS for navBarMobile -->
+<link rel="stylesheet" href="./style/navBarMobile.css">
 <!-- CSS for footer page -->
 <link rel="stylesheet" href="style/footer.css">
 <!-- CSS for account system button page -->

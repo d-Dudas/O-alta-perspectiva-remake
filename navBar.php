@@ -1,4 +1,4 @@
-<div id = "textBox">
+<div id = "navTextBox">
         <h1><a href="./home.php">O altă perspectivă</a></h1>
         <h2>Privește lucrurile dintr-o altă dimensiune</h2>
 </div>

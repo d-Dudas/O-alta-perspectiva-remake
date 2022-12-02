@@ -12,73 +12,105 @@ body {
 }
 
 #backgroundItems {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: -4;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -4;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  
-  @-webkit-keyframes rotating /* Safari and Chrome */ {
-      from {
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      to {
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes rotating {
-      from {
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      to {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-  
-  .backgroundItem {
-    opacity: 30%;
-    z-index: -1;
-    overflow: hidden;
-    -webkit-animation: rotating 360s linear infinite;
-    -moz-animation: rotating 360s linear infinite;
-    -ms-animation: rotating 360s linear infinite;
-    -o-animation: rotating 360s linear infinite;
-    animation: rotating 360s linear infinite;
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.backgroundItem {
+  opacity: 30%;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-animation: rotating 360s linear infinite;
+  -moz-animation: rotating 360s linear infinite;
+  -ms-animation: rotating 360s linear infinite;
+  -o-animation: rotating 360s linear infinite;
+  animation: rotating 360s linear infinite;
+}
+
+#backgroundItem1 {
+  position: absolute;
+  right: -10%;
+  bottom: -15%;
+  width: 55vw;
+  height: auto;
+}
+
+#backgroundItem2 {
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  width: 20vw;
+  height: auto;
+}
+
+#backgroundItem3 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  animation-direction: reverse;
+  width: 40vw;
+  height: auto;
+}
+
+/* CSS FOR MOBILE */
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+
   #backgroundItem1 {
     position: absolute;
-    right: -10%;
+    left: -20%;
     bottom: -15%;
-    width: 55vw;
+    width: 55vmax;
     height: auto;
   }
   
   #backgroundItem2 {
     position: absolute;
-    left: -5%;
-    top: -5%;
-    width: 20vw;
+    left: -20%;
+    top: -1%;
+    width: 35vmax;
     height: auto;
   }
   
   #backgroundItem3 {
     position: absolute;
-    left: 0%;
-    bottom: 0%;
+    left: 30%;
+    top: 20%;
     animation-direction: reverse;
-    width: 40vw;
+    width: 50vmax;
     height: auto;
   }
+
+}
