@@ -22,10 +22,11 @@
         include "./accountSystemButtons.php";
         include "./background.html";
         include './navBar.html';
+        include './navBarMobile.html';
         include "./includes/manageArticles.php";
 
-        if(!in_array($id,$_SESSION['seenArticles'])) {
-            array_push($_SESSION['seenArticles'], $id);
+        if(!in_array($_GET["id"],$_SESSION['seenArticles'])) {
+            array_push($_SESSION['seenArticles'], $_GET["id"]);
             updateView($_GET['id']);
         }
         
@@ -143,10 +144,12 @@
             </label>
         </form>
     </div>
-
+    <div id="sfooter"></div>
 
 </body>
 <script src="./javascript/articlePage.js"></script>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>

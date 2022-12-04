@@ -98,3 +98,63 @@
     width: 90%;
     height: 40%;
 }
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+    #articles {
+        top: 10%;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        display: block;
+    }
+
+    #mostRecentArticle {
+        position: relative;
+        width: 90%;
+        height: 40vh;
+        overflow: visible;
+    }
+    
+    #recentArticles {
+        position: relative;
+        width: 90%;
+        height: 50vh;
+    }
+
+    #mostRecentArticle, #recentArticles {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .articleOnMobileScreen {
+        width: 100%;
+        height: 100%;
+    }
+
+    .article-a {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .articlePreview {
+        top: 88%;
+    }
+
+    .articlePreviewSmall {
+        top: 80%;
+    }
+
+    .articleTitleSmall, .articleTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 6vmin;
+    }
+
+    body {
+        height: 190vh !important;
+    }
+}

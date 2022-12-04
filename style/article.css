@@ -344,4 +344,96 @@ textarea:focus, input:focus{
 }
 
 
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+    #article, #comments {
+        position: relative;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    #article {
+        border-radius: 0px 0px 32px 32px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
+    }
+
+    #articleTitle {
+        height: 15vmin;
+    }
+
+    #articleTitle h1 {
+        font-size: 8vmin;
+    }
+
+    #posterImage, #posterImage img {
+        min-height: auto;
+    }
+
+    #articleText {
+        font-size: 3.5vmin;
+    }
+
+    #articleDetails {
+        font-size: 3vmin;
+    }
+
+    #comments {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    #sfooter {
+        position: relative;
+        top: 5vh;
+        height: 2vh;
+        width: 100%;
+        background-color: black;
+    }
+
+    #commentText {
+        height: 15%;
+    }
+
+    #commentText h1 {
+        font-size: 6vmin;
+    }
+
+    #commentsList {
+        height: 70%;
+    }
+
+    .commentUsername {
+        font-size: 3vmin;
+    }
+
+    .commentText {
+        font-size: 3.5vmin;
+    }
+
+    #writeComment {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #writeComment label[for=comment] {
+        height: 40%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #comment {
+        height: 100%;
+        font-size: 3.5vmin;
+    }
+
+    .commentBox:first-child {
+        border-top: none;
+    }
+
+}
+
 

@@ -6,8 +6,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(29deg, #8c7a6c 0%, #d8bea7 100%);
-    background-blend-mode: normal;
+    background: rgb(216,190,167);
+    background: linear-gradient(90deg, rgba(216,190,167,1) 0%, rgba(182,149,124,1) 50%, rgba(216,190,167,1) 100%);
     overflow-x: hidden;
 }
 

@@ -227,6 +227,7 @@ form label[for = 'pwdR'] {
 }
 
 #textBox {
+  position: absolute;
   top: 15%;
   left: 5%;
   transition: 1s all;

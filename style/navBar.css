@@ -1,4 +1,9 @@
-#navnavTextBox {
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#navTextBox {
     position: absolute;
     color: white;
     width: 100vw;
@@ -6,7 +11,7 @@
     left: 2vw;
 }
   
-#navnavTextBox h1 a{
+#navTextBox h1 a{
     font-size: 10vmin;
     font-family: 'Sawarabi Gothic', sans-serif;
     text-shadow: 10px 8px 4px rgba(100,100,100,0.5);
@@ -14,7 +19,7 @@
     text-decoration: none;
 }
   
-#navnavTextBox h2 {
+#navTextBox h2 {
     font-size: 4vmin;
     font-family: 'Big Shoulders Stencil Display', cursive;
     color:rgba(248, 248, 248, 0.4);
@@ -73,4 +78,11 @@
     font-size: 2.6vmin;
     background: linear-gradient(0deg, rgba(255,255,255,0.3) 0%, rgb(222, 222, 222, 0.5) 100%);
     box-shadow: 1px 4px 4px rgba(100,100,100,0.5);
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+
+    #navBar, #navTextBox {
+        display: none;
+    }
 }
