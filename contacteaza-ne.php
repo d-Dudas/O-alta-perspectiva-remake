@@ -14,6 +14,7 @@
 <body>
     <?php
         include './navBar.html';
+        include './navBarMobile.html';
         include "./accountSystemButtons.php";
         include "./background.html";
     ?>
@@ -42,8 +43,14 @@
         <a href = "https://www.youtube.com" target = "_blank"><iconify-icon icon = "bi:youtube" style="color: #3131319d; font-size: 6vmin"></iconify-icon>Youtube</a>
         <a href = "https://www.patreon.com" target = "_blank"><iconify-icon icon = "cib:patreon" style="color: #3131319d; font-size: 6vmin"></iconify-icon>Patreon</a>
     </div>
+
+    <?php 
+        include './footer.html';
+    ?>
 </body>
 <script src="./javascript/contacteaza-nePage.js"></script>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>
