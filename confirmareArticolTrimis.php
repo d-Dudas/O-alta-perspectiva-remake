@@ -15,12 +15,13 @@
 <body>
 <?php
         include './navBar.html';
+        include './navBarMobile.html';
         include "./accountSystemButtons.php";
         include "./background.html";
     ?>
     <div id="confirmBox">
         <div id="confirmBoxContent">
-            <div><iconify-icon icon = "bi:send-check" style="color: white; font-size: 15vmin"></div>
+            <div><iconify-icon id = "messageSentIcon" icon = "bi:send-check"></div>
             <p>Articolul a fost trimis cu succes.</p>
             <p>Vă  mulțumim!</p>
             <a href="./home.php">Înapoi pe pagina principală</a>
@@ -35,7 +36,13 @@
 
         <p>Vă mulțumim!</p>
     </div>
+
+    <?php 
+        include './footer.html';
+    ?>
 </body>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>

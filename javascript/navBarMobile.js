@@ -3,6 +3,7 @@ if(window.matchMedia("(max-width: 1000px)").matches) {
     let accBtns = $("#buttons");
     accBtns.remove();
     $("#navBarMobile").append(accBtns);
+    $("#controlPanelBtn").css("right", "auto");
     if(window.location.search.substring(1).includes("login=show")) 
         setTimeout(() => {
             $("#textBox").css("top", "100%");

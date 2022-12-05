@@ -25,6 +25,11 @@
     justify-content: center;
 }
 
+#logo a {
+    height: 100%;
+    width: auto;
+}
+
 #logo img {
     height: 100%;
     width: auto;

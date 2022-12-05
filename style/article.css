@@ -300,6 +300,7 @@ textarea:focus, input:focus{
 
     font-size: 3vmin;
     font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
 }
 
 #confirmDeleteBox button {
@@ -371,6 +372,28 @@ textarea:focus, input:focus{
 
     #articleDetails {
         font-size: 3vmin;
+    }
+
+    #adminButtons {
+        width: 20%;
+        height: 5vh;
+    }
+
+    #adminEditIcon, #adminDeleteIcon {
+        font-size: 8vmin !important;
+    }
+
+    #confirmDeleteBox {
+        width: 80%;
+        height: 20%;
+    }
+
+    #confirmDeleteBox p {
+        font-size: 7vmin;
+    }
+
+    #confirmDeleteBox button, #confirmDeleteBox input[type="submit"] {
+        font-size: 6vmin;
     }
 
     #comments {

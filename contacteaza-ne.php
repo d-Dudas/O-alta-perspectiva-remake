@@ -37,12 +37,12 @@
     <div id="informatiiGenerale">
         <p>De asemenea, ne găsiți și pe următoarele platforme:</p>
 
-        <a href = "https://www.facebook.com" target = "_blank"><iconify-icon icon = "bi:facebook" style="color: #3131319d; font-size: 6vmin"></iconify-icon> Facebook</a>
-        <a href = "https://www.instagram.com" target = "_blank"><iconify-icon icon = "bi:instagram" style="color: #3131319d; font-size: 6vmin"></iconify-icon> Instagram</a>
-        <a href = "https://www.twitter.com" target = "_blank"><iconify-icon icon = "bi:twitter" style="color: #3131319d; font-size: 6vmin"></iconify-icon>Twitter</a>
-        <a href = "https://www.youtube.com" target = "_blank"><iconify-icon icon = "bi:youtube" style="color: #3131319d; font-size: 6vmin"></iconify-icon>Youtube</a>
-        <a href = "https://www.patreon.com" target = "_blank"><iconify-icon icon = "cib:patreon" style="color: #3131319d; font-size: 6vmin"></iconify-icon>Patreon</a>
-    </div>
+        <a href = "https://www.facebook.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:facebook"></iconify-icon> Facebook</a>
+        <a href = "https://www.instagram.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:instagram"></iconify-icon> Instagram</a>
+        <a href = "https://www.twitter.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:twitter"></iconify-icon>Twitter</a>
+        <a href = "https://www.youtube.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:youtube"></iconify-icon>Youtube</a>
+        <a href = "https://www.patreon.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "cib:patreon"></iconify-icon>Patreon</a>
+    </div> 
 
     <?php 
         include './footer.html';

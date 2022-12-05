@@ -23,6 +23,7 @@
 <body>
     <?php
         include './navBar.html';
+        include './navBarMobile.html';
         include "./accountSystemButtons.php";
         include "./background.html";
     ?>
@@ -84,10 +85,15 @@
 
         <p>Vă sugerăm să nu alegeți o parolă similară cu adresa de mail.</p>
     </div>
+
+    <?php 
+        include './footer.html';
+    ?>
 </body>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
 <!-- ChangePassword.js -->
 <script src="javascript/changePassword.js"></script>
-
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>

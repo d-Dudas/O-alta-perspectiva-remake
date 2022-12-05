@@ -114,3 +114,50 @@
     filter: drop-shadow(2px 2px 3px rgb(0 0 0 / 0.4));
 }
 
+.socialPlatformIcon {
+    color: #3131319d;
+    font-size: 6vmin
+}
+
+#messageSentIcon {
+    color: white; 
+    font-size: 15vmin;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+
+    #informatiiGenerale {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    #confirmBox {
+        position: relative;
+        top: 10%;
+        left: 0px;
+        width: 100%;
+        height: 70vh;
+    }
+
+    #confirmBoxContent {
+        position: relative;
+        top: 0px;
+        width: 90%;
+    }
+
+    #confirmBoxContent p {
+        font-size: 6vmin;
+    }
+
+    #confirmBoxContent a {
+        width: 50%;
+        font-size: 4vmin;
+    }
+
+    #messageSentIcon {
+        font-size: 25vmin;
+    }
+
+}
+

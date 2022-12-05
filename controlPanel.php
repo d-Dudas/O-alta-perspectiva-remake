@@ -21,6 +21,7 @@
     <?php
         include './accountSystemButtons.php';
         include './navBar.html';
+        include './navBarMobile.html';
         include './background.html';
         include './includes/controlPanelFunctions.inc.php';
         if(isset($_SESSION['ifAdmin'])){
@@ -91,7 +92,7 @@
             <label for="sendButton">
                 <p>Trimite</p>
                 <button type="submit" name="sendButton" id="sendButton">
-                    <iconify-icon icon="fa:send-o" style="font-size:3vmin;"></iconify-icon>
+                    <iconify-icon id="sendButtonIcon" icon="fa:send-o"></iconify-icon>
                 </button>
             </label>
 
@@ -176,11 +177,13 @@
         <form class="selectedPanelElements" method="POST" action="./includes/addSuggestions.inc.php"
             id="addSuggestions">
             <h2>Adaugă articol la lista articolelor recomandate</h2>
-            <input type="text" name="suggestionTitle" id="suggestionTitle" placeholder="Titlu articol...">
-            <input type="text" name="suggestionPoster" id="suggestionPoster" placeholder="Link poster articol...">
-            <input type="text" name="suggestionLink" id="suggestionLink" placeholder="Link articol...">
-            <input type="hidden" name="suggestionUploadedBy" value="<?php echo $_SESSION['username']; ?>">
-            <input type="submit" value="Trimite">
+            <div id="suggestedArticleInputs">
+                <input type="text" name="suggestionTitle" id="suggestionTitle" placeholder="Titlu articol...">
+                <input type="text" name="suggestionPoster" id="suggestionPoster" placeholder="Link poster articol...">
+                <input type="text" name="suggestionLink" id="suggestionLink" placeholder="Link articol...">
+                <input type="hidden" name="suggestionUploadedBy" value="<?php echo $_SESSION['username']; ?>">
+                <input type="submit" value="Trimite">
+            </div>
         </form>
 
         <?php 
@@ -234,6 +237,10 @@
         ?>
     </div>
 
+    <?php 
+        include './footer.html'
+    ?>
+
 </body>
 <script>
 ClassicEditor
@@ -256,5 +263,7 @@ ClassicEditor
 <script src="./javascript/controlPanel.js"></script>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 
 </html>

@@ -118,6 +118,11 @@ textarea:focus, input:focus{
     transition: 1s all;
 }
 
+.socialPlatformIcon {
+    color: #3131319d;
+    font-size: 6vmin
+}
+
 #informatiiGenerale a:hover, a *:hover {
     color: #313131 !important;
     filter: drop-shadow(2px 2px 3px rgb(0 0 0 / 0.4));
@@ -157,9 +162,23 @@ textarea:focus, input:focus{
 
 @media only screen and (min-width: 10px) and (max-width: 1000px) {
     #informatiiGenerale {
-        display: none;
-        width: 0px;
-        height: 0px;
+        position: relative;
+        top: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    #informatiiGenerale a {
+        font-size: 6vmin;
+    }
+
+    .socialPlatformIcon {
+        font-size: 10vmin;
+    }
+
+    #informatiiGenerale p {
+        font-size: 7vmin;
     }
 
     #contactBox {
@@ -196,4 +215,10 @@ textarea:focus, input:focus{
         height: 60%;
         font-size: 4vmin;
     }
+
+    #footer {
+        position: relative !important;
+        top: 15vh;
+    }
+
 }

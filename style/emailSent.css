@@ -23,7 +23,7 @@
     transform: translateY(-50%);
 }
 
-h1 {
+#items h1 {
     margin: 0% 10%;
     font-family: 'Sawarabi Gothic', sans-serif;
     color: rgb(75, 75, 75);
@@ -41,7 +41,7 @@ h1 {
     
 }
 
-h2 {
+#items h2 {
     width: 50%;
     font-family: 'Sawarabi Gothic', sans-serif;
     color: rgb(37, 37, 37);
@@ -52,7 +52,7 @@ h2 {
     transform: translateX(-50%);
 }
 
-button {
+#items button {
     margin-top: 10vmin;
     width: 15vw;
     height: 8vh;
@@ -61,7 +61,7 @@ button {
     border-radius: 50px;
     background: linear-gradient(135deg, #ffffffcc 0%, #d3d3d3be 100%);
     background-blend-mode: normal;
-    box-shadow: 10px 6px 4px rgba(100,100,100,0.5);
+    box-shadow: -5px 6px 4px rgba(100,100,100,0.5);
     justify-content: center;
     align-items: center;
     transition: 2s all;
@@ -70,7 +70,7 @@ button {
     transform: translateX(-50%);
 }
   
-a {
+#items button a {
     text-decoration: none;
     font-size: 2vmin;
     font-family: 'Oswald', sans-serif;
@@ -78,11 +78,54 @@ a {
     transition: 1s all;
 }
 
-button:hover {
+#items button:hover {
     box-shadow: 15px 10px 4px rgba(100,100,100,0.6);
     background: linear-gradient(135deg, #ffffff 0%, #d3d3d3 100%);
 }
   
-a:hover {
+#items button a:hover {
     text-shadow: 6px 4px 4px rgba(100,100,100,0.5);
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+    #confirmBox {
+        position: absolute;
+        top: 0%;
+        left: 0px;
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+
+    #items h1 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8vmin;
+        margin: 0px;
+        width: 60%;
+    }
+
+    #emailSentIconBox {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+    }
+
+    #items h2 {
+        position: absolute;
+        top: 60%;
+        font-size: 5vmin;
+        width: 70%;
+    }
+
+    #items button {
+        position: absolute;
+        top: 80%;
+        width: 60%;
+    }
+
+    #items button a {
+        font-size: 5vmin;
+    }
 }

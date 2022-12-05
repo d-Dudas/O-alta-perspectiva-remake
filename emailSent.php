@@ -14,6 +14,7 @@
 <body>
     <?php
         include './background.html';
+        include './navBarMobile.html';
     ?>
     <div id="confirmBox">
         <div id="items">
@@ -24,4 +25,6 @@
         </div>
     </div>
 </body>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>
