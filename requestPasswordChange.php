@@ -16,6 +16,7 @@
 <body>
     <?php
         include './navBar.html';
+        include './navBarMobile.html';
         include "./accountSystemButtons.php";
         include "./background.html";
     ?>
@@ -61,5 +62,6 @@
 <script src="javascript/accountSystemButtons.js"></script>
 <!-- ChangePassword.js -->
 <script src="javascript/requestChangePassword.js"></script>
-
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>

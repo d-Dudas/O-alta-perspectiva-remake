@@ -262,7 +262,7 @@ form label[for = 'pwdR'] {
   border-radius: 50px;
   background: linear-gradient(135deg, #ffffffcc 0%, #d3d3d3be 100%);
   background-blend-mode: normal;
-  box-shadow: 10px 6px 4px rgba(100,100,100,0.5);
+  box-shadow: -10px 6px 4px rgba(100,100,100,0.5);
   justify-content: center;
   align-items: center;
   transition: 2s all;

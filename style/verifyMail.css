@@ -23,7 +23,7 @@
     transform: translateY(-50%);
 }
 
-h1 {
+#items h1 {
     margin: 0% 10%;
     font-family: 'Sawarabi Gothic', sans-serif;
     color: rgb(75, 75, 75);
@@ -31,7 +31,7 @@ h1 {
     text-align: center;
 }
 
-button {
+#items button {
     margin-top: 10vmin;
     width: 15vw;
     height: 8vh;
@@ -40,7 +40,7 @@ button {
     border-radius: 50px;
     background: linear-gradient(135deg, #ffffffcc 0%, #d3d3d3be 100%);
     background-blend-mode: normal;
-    box-shadow: 10px 6px 4px rgba(100,100,100,0.5);
+    box-shadow: -10px 6px 4px rgba(100,100,100,0.5);
     justify-content: center;
     align-items: center;
     transition: 2s all;
@@ -49,7 +49,7 @@ button {
     transform: translateX(-50%);
 }
   
-a {
+#items button a {
     text-decoration: none;
     font-size: 2vmin;
     font-family: 'Oswald', sans-serif;
@@ -64,4 +64,30 @@ button:hover {
   
 a:hover {
     text-shadow: 6px 4px 4px rgba(100,100,100,0.5);
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) {
+    #confirmBox {
+        position: relative;
+        top: 0%;
+        left: 0px;
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+
+    #items h1 {
+        position: absolute;
+        top: 15%;
+        font-size: 8vmin;
+    }
+
+    #items button {
+        position: absolute;
+        top: 50%;
+        width: 50%;
+    }
+
+    #items button a {
+        font-size: 6vmin;
+    }
 }

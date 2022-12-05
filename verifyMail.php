@@ -14,6 +14,7 @@
 <body>
     <?php
         include './background.html';
+        include './navBarMobile.html';
     ?>
     <div id="confirmBox">
         <div id="items">
@@ -28,9 +29,9 @@
 
                     if($resultSet->num_rows == 1) {
                         $update = $conn->query("UPDATE accounts SET verified = 1 WHERE vkey = '$vkey' LIMIT 1");
-                        echo "<h1>Contul a fost verificat cu succes.</h1><button><a href=\"./index.php\">Înapoi pe pagina de pornire.</a></button>";
+                        echo "<h1>Contul a fost verificat cu succes.</h1><button><a href=\"./index.php\">Înapoi pe pagina de pornire</a></button>";
                     }
-                    else echo "<h1>Acest cont este invalid sau deja verificat.</h1><button><a href=\"./index.php?login=show\">Autentificare.</a></button>";
+                    else echo "<h1>Acest cont este invalid sau deja verificat.</h1><button><a href=\"./index.php?login=show\">Autentificare</a></button>";
 
                 }
                 else die("Something went wrong.");
@@ -39,4 +40,6 @@
         </div>
     </div>
 </body>
+<!-- Nav bar for mobile devices javascript -->
+<script src="./javascript/navBarMobile.js"></script>
 </html>
