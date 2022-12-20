@@ -36,9 +36,9 @@
     ?>
     <div id="slideBar">
         <img id="landingPageImage" src="./images/landingPageSideIllustration.png" alt="A lamp to make your day shine.">
-        <div id="login">
-            <h2>Autentificare</h2>
-            <form id="loginForm" method="POST" action="./includes/login.inc.php">
+        <div id="login" class = "centerH">
+            <h2 class = "centerH">Autentificare</h2>
+            <form id="loginForm" class = "flexClmEvn" method="POST" action="./includes/login.inc.php">
                 <?php
                     if(isset($_GET["error"]))
                     if($_GET["error"] == "loginAccNotVerfied"){
@@ -89,9 +89,9 @@
                 <input type="submit" value="Autentificare" id="submitBtn">
             </form>
         </div>
-        <div id="register">
-            <h2>Înregistrare</h2>
-            <form id="registerForm" method="POST" action="./includes/register.inc.php">
+        <div id="register" class = "centerH">
+            <h2 class = "centerH" >Înregistrare</h2>
+            <form id="registerForm" class = "flexClmEvn" method="POST" action="./includes/register.inc.php">
                 <label for="usernameR">
                     <input class="inputs" type="text" name="usernameR" id="usernameR" placeholder="Nume utilizator...">
                 </label>

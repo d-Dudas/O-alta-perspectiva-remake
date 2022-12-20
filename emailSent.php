@@ -17,11 +17,11 @@
         include './navBarMobile.html';
     ?>
     <div id="confirmBox">
-        <div id="items">
+        <div id="items" class = "centerV">
             <h1>Înregistrare reușită!</h1>
-            <div id = "emailSentIconBox"><iconify-icon id = "emailSentIcon" icon = "ic:outline-attach-email" style="color: grey; font-size: 20vmin"></div>
-            <h2>Un link de confirmare a fost trimis pe mail.</h2>
-            <button><a href="./index.php">Înapoi pe pagina de pornire.</a></button>
+            <div id = "emailSentIconBox" class = "flexClmEvn"><iconify-icon id = "emailSentIcon" icon = "ic:outline-attach-email" style="color: grey; font-size: 20vmin"></div>
+            <h2 class = "centerH">Un link de confirmare a fost trimis pe mail.</h2>
+            <button class = "centerH"><a href="./index.php">Înapoi pe pagina de pornire.</a></button>
         </div>
     </div>
 </body>

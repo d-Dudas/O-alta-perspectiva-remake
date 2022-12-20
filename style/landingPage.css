@@ -28,15 +28,13 @@ body {
 }
 
 #landingPageImage {
-    position: relative;
-    height: 57vh;
-    width: 38vw;
+  position: relative;
+  height: 57vh;
+  width: 38vw;
 }
 
 #login {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   width: 20vw;
   height: 60vh;
   border-radius: 50px;
@@ -47,8 +45,6 @@ body {
 
 #login h2 {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 3rem;
   text-shadow: 0px 2px 4px rgba(100,100,100,0.5);
   color: #606060;
@@ -60,9 +56,6 @@ body {
 
 #login form {
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -183,8 +176,6 @@ form label[for = 'pwdR'] {
 
 #register {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   width: 20vw;
   height: 60vh;
   border-radius: 50px;
@@ -196,8 +187,6 @@ form label[for = 'pwdR'] {
 #register h2 {
   font-family: 'Big Shoulders Stencil Display', cursive;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 3rem;
   text-shadow: 0px 2px 4px rgba(100,100,100,0.5);
   color: #606060;
@@ -208,9 +197,6 @@ form label[for = 'pwdR'] {
 
 #register form {
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 

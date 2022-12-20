@@ -36,7 +36,7 @@
         }
     ?>
 
-    <div id="menu">
+    <div id="menu" class = "lightBlur fiveShadow">
         <h1>Secțiuni de administrat</h1>
         <div id="menuButtons">
             <button class="menuButton" onclick="showThis('#addArticle')">Încarcă un articol nou</button>
@@ -56,7 +56,7 @@
 
     <div id="selectedPanel">
         <!-- Form pentru a încărca un articol nou -->
-        <form class="selectedPanelElements" id="addArticle" method="POST" action="./includes/uploadArticle.inc.php"
+        <form class="selectedPanelElements centerH lightBlur fiveShadow" id="addArticle" method="POST" action="./includes/uploadArticle.inc.php"
             enctype="multipart/form-data">
             <div id="dateArticol">
                 <label for="titlu">
@@ -102,7 +102,7 @@
         </form>
 
         <!-- Lista articolelor trimise de utilizatori -->
-        <div class="selectedPanelElements" id="sentArticlesBox">
+        <div class="selectedPanelElements centerH" id="sentArticlesBox" class = "lightBlur fiveShadow">
             <h2>Articole trimise</h2>
             <div id="sentArticlesList">
                 <?php
@@ -140,7 +140,7 @@
         </div>
 
         <!-- Lista mesajelor trimise de utilizatori -->
-        <div class="selectedPanelElements" id="sentMessagesBox">
+        <div class="selectedPanelElements centerH lightBlur fiveShadow" id="sentMessagesBox">
             <h2>Mesaje trimise</h2>
             <div id="sentMessagesList">
                 <?php
@@ -174,10 +174,10 @@
         </div>
 
         <!-- Form pentru a adauga o noua recomandare de articol -->
-        <form class="selectedPanelElements" method="POST" action="./includes/addSuggestions.inc.php"
-            id="addSuggestions">
+        <form class="selectedPanelElements centerH" method="POST" action="./includes/addSuggestions.inc.php"
+            id="addSuggestions" class = "lightBlur fiveShadow">
             <h2>Adaugă articol la lista articolelor recomandate</h2>
-            <div id="suggestedArticleInputs">
+            <div id="suggestedArticleInputs" class = "flexClmEvn">
                 <input type="text" name="suggestionTitle" id="suggestionTitle" placeholder="Titlu articol...">
                 <input type="text" name="suggestionPoster" id="suggestionPoster" placeholder="Link poster articol...">
                 <input type="text" name="suggestionLink" id="suggestionLink" placeholder="Link articol...">
@@ -191,11 +191,11 @@
                     $article = getArticleById($_GET["editArticle"]);
                     echo '
                     <!-- Form pentru a încărca un articol nou -->
-                    <form class = "selectedPanelElements" id="editArticle" method = "POST" action = "./includes/editArticle.inc.php" enctype="multipart/form-data">
+                    <form class = "selectedPanelElements centerH lightBlur fiveShadow" id="editArticle" method = "POST" action = "./includes/editArticle.inc.php" enctype="multipart/form-data">
                         <input type = hidden name = "id" value = "'.$_GET["editArticle"].'" style="display:none"/> 
                         <input type = hidden name = "originalPoster" value = "'.$article["poster"].'" style="display:none"/> 
                         <input type = hidden name = "originalPosterPosition" value = "'.$article["posterPosition"].'" style="display:none"/> 
-                        <div id="dateArticol">
+                        <div id="dateArticol" class = "flexClmEvn">
                             <label for="titlu">
                                 <input type="text" name="titlu" id="titlu" placeholder = "Titlu" value="'.$article['titlu'].'">
                             </label>
@@ -226,7 +226,7 @@
                         </label>
                         <label for="sendButton">
                             <p>Trimite</p>
-                            <button type="submit" name="sendButton" id="sendButton">
+                            <button type="submit" name="sendButton" id="sendButton" class = "lightBlur fiveShadow">
                                 <iconify-icon icon="fa:send-o" style="font-size:3vmin;"></iconify-icon>
                             </button>
                         </label>

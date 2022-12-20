@@ -21,7 +21,7 @@
         include "./background.html";
     ?>
     <div id="formBox">
-        <form id="requestChangePasswordForm" method="POST" action="./includes/sendChangePasswordMail.inc.php">
+        <form id="requestChangePasswordForm"class = "centerH heavyBlur fiveShadow flexClmEvn" method="POST" action="./includes/sendChangePasswordMail.inc.php">
             <label for="email">
                 <input class="inputs" type="email" name="email" id="email" placeholder="Adresă de mail...">
             </label>

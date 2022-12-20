@@ -19,7 +19,7 @@
         include "./background.html";
     ?>
     <div id="sendArticleBox">
-        <form method = "POST" action="./includes/sendArticle.inc.php" id="sendArticleForm" enctype="multipart/form-data">
+        <form method = "POST" action="./includes/sendArticle.inc.php" id="sendArticleForm" class = "centerH heavyBlur fiveShadow flexClmEvn" enctype="multipart/form-data">
             <input type="text" id="name" name="name" placeholder="Nume...">
             <?php
                 if(isset($_SESSION['email']))
@@ -38,7 +38,7 @@
             <input type="submit" value="Trimite">
         </form>
     </div>
-    <div id="informatiiGenerale">
+    <div id="informatiiGenerale" class = "lightBlur fiveShadow flexClmEvn">
         <p>Organizația noastră tinde spre cooperarea cu comunitatea și apreciază orice scriere cu valoare culturală.</p>
 
         <p>Vă rugăm să completați fiecare câmp.</p>

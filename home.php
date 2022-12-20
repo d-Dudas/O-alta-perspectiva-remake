@@ -30,8 +30,8 @@
             echo '
                 <a href = "./articol.php?id='.$articles[0]["id"].'"><div id = "article1" class = "articles" style = "background-image: url('.substr($articles[0]["poster"], 1, strlen($articles[0]["poster"])).'); background-position: '.$articles[0]["posterPosition"].'">
                     <div class = "articlePreview">
-                        <div class = "articleTitle"><p>'.$articles[0]["titlu"].'</p></div>
-                        <div class = "articleText"><p>'.$articles[0]["text"].'</p></div>
+                        <div class = "articleTitle heavyBlur"><p>'.$articles[0]["titlu"].'</p></div>
+                        <div class = "articleText heavyBlur"><p>'.$articles[0]["text"].'</p></div>
                     </div>
                 </div></a>
 

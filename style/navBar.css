@@ -60,8 +60,6 @@ a {
     border-radius: 0px 0px 30px 30px;
     background: linear-gradient(0deg, rgba(255,255,255,0.3) 0%, #dedede2c 100%);
     background-blend-mode: normal;
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
     box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
     display: flex;
     align-items: center;

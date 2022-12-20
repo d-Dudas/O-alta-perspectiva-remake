@@ -1,0 +1,29 @@
+.centerH {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerV {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.heavyBlur {
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+}
+
+.lightBlur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.fiveShadow {
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
+}
+
+.flexClmEvn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

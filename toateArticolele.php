@@ -33,8 +33,8 @@
                         <a href = "./articol.php?id='.$a["id"].'">
                             <div class = "articles" style = "background-image: url('.substr($a["poster"], 1, strlen($a["poster"])).'); background-position: '.$a["posterPosition"].'"">
                                 <div class = "articlePreview">
-                                    <div class = "articleTitle"><p>'.$a["titlu"].'</p></div>
-                                    <div class = "articleText"><p>'.$a["text"].'</p></div>
+                                    <div class = "articleTitle heavyBlur"><p>'.$a["titlu"].'</p></div>
+                                    <div class = "articleText heavyBlur"><p>'.$a["text"].'</p></div>
                                 </div>
                             </div>
                         </a>

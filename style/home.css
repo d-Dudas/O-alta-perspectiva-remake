@@ -47,8 +47,6 @@
     font-size: 3.5vmin;
     background: linear-gradient(0deg, #d6d6d6 0%, #ffffff88 100%);
     background-blend-mode: normal;
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
     box-shadow: 0px 10px 6px rgba(100,100,100,0.5);
     z-index: 5;
     transition: 1s all;
@@ -58,8 +56,6 @@
 .articleText {
     background: linear-gradient(0deg, #ffffff63 100%, #d6d6d6 0%);
     background-blend-mode: normal;
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
     position: relative;
     width: 90%;
     height: 90%;

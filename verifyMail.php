@@ -17,7 +17,7 @@
         include './navBarMobile.html';
     ?>
     <div id="confirmBox">
-        <div id="items">
+        <div id="items" class = "centerV">
             <?php
                 if(isset($_GET['vkey'])){
                     $vkey = $_GET['vkey'];
