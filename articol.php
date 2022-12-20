@@ -32,7 +32,7 @@
         
         $articol = getArticleById($_GET['id']);
     ?>
-    <div id="article">
+    <div id="article" class="lightBlur">
         <?php 
             if(isset($_SESSION['ifAdmin'])) {
                 if($_SESSION['ifAdmin'] == 1) {
@@ -57,14 +57,14 @@
             </h1>
         </div>
         <div id="articleContent">
-            <div id="posterImage">
+            <div id="posterImage" class="centerH">
                 <img src="
                 <?php
                     echo substr($articol["poster"], 1, strlen($articol["poster"]));
                 ?>
                 " alt="">
             </div>
-            <div id="articleText">
+            <div id="articleText" class="centerH">
                 <?php
                     echo $articol['text'];
                 ?>
@@ -89,8 +89,8 @@
             </div>
         </div>
     </div>
-    <div id="comments">
-        <div id="commentText"><h1>Fiecare opinie contează!</h1></div>
+    <div id="comments" class="lightBlur fiveShadow">
+        <div id="commentText"><h1 class="centerV">Fiecare opinie contează!</h1></div>
         <div id="commentsList">
             <?php
                 $comments = getComments($_GET['id']);
@@ -131,7 +131,7 @@
                 if(isset($_SESSION['username'])){
                     echo '<input type="hidden" name="articleId" value ='.$_GET["id"].'>
                     <input type="hidden" name="username" value ='.$_SESSION["username"].'>
-                    <input type="text" name="comment" id="comment" placeholder = "Scrie ceva...">';
+                    <input type="text" name="comment" id="comment" class = "centerH" placeholder = "Scrie ceva...">';
                 
                 } else
                     echo '<input type="text" name="comment" id="comment" placeholder = "Autentificați-vă pentru a scrie un comentariu" disabled = true>';

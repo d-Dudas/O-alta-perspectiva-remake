@@ -20,14 +20,14 @@
         include "./background.html";
     ?>
     <div id="confirmBox">
-        <div id="confirmBoxContent">
+        <div id="confirmBoxContent" class = "centerH heavyBlur fiveShadow flexClmEvn">
             <div><iconify-icon id = "messageSentIcon" icon = "bi:send-check"></div>
             <p>Articolul a fost trimis cu succes.</p>
             <p>Vă  mulțumim!</p>
-            <a href="./home.php">Înapoi pe pagina principală</a>
+            <a href="./home.php" class="lightBlur">Înapoi pe pagina principală</a>
         </div>
     </div>
-    <div id="informatiiGenerale">
+    <div id="informatiiGenerale" class = "lightBlur fiveShadow flexClmEvn">
         <p>Organizația noastră tinde spre cooperarea cu comunitatea și apreciază orice scriere cu valoare culturală.</p>
 
         <p>Vă rugăm să completați fiecare câmp.</p>

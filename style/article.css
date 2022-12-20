@@ -7,8 +7,6 @@
     flex-direction: column;
     background: rgba(255, 255, 255, 0.63);
     background-blend-mode: normal;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 #articleTitle {
@@ -29,8 +27,6 @@
 
 #posterImage {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     width: 80%;
     margin-top: 5%;
     max-height: 50vh;
@@ -48,8 +44,6 @@
 #articleText {
     position: relative;
     width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
     margin-top: 5%;
     font-family: 'Domine', serif;
     font-size: 2.5vmin;
@@ -86,9 +80,6 @@
     background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(211,211,211,0.7) 100%);
     background-blend-mode: normal;
     overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
 }
 
 #commentText {
@@ -100,8 +91,6 @@
 
 #commentText h1 {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
     font-family: 'Domine', serif;
     font-size: 3vmin;
@@ -125,8 +114,6 @@
 
 #comment {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     width: 90%;
     background-color: none;
     font-size: 1.7vmin;
@@ -223,30 +210,6 @@ textarea:focus, input:focus{
 .deleteCommentIcon:hover {
     color: red !important;
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 110%;
-    position: fixed;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f111;
-}
-  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(190, 190, 190);
-    border-radius: 10px;
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 
 /* CSS for admin tools: delete, edit article */
 

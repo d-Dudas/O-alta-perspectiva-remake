@@ -21,14 +21,14 @@
     ?>
 
     <div id="confirmBox">
-        <div id="confirmBoxContent">
+        <div id="confirmBoxContent" class = "centerH heavyBlur fiveShadow flexClmEvn">
             <div><iconify-icon id="messageSentIcon" icon = "bi:send-check"></div>
             <p>Mesajul a fost trimis cu succes. În curent vă vom răspunde printr-un mail.</p>
             <p>Vă  mulțumim!</p>
-            <a href="./home.php">Înapoi pe pagina principală</a>
+            <a href="./home.php" class = "lightBlur">Înapoi pe pagina principală</a>
         </div>
     </div>
-    <div id="informatiiGenerale">
+    <div id="informatiiGenerale" class = "lightBlur fiveShadow flexClmEvn">
         <p>De asemenea, ne găsiți și pe următoarele platforme:</p>
 
         <a href = "https://www.facebook.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:facebook"></iconify-icon> Facebook</a>

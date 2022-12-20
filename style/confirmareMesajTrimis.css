@@ -9,20 +9,12 @@
 #confirmBoxContent {
     position: relative;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 40%;
     height: 90%;
     background: rgba(211,211,211,0.32);
     background-blend-mode: normal;
     border-radius: 0px 0px 50px 50px;
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
 }
 
 #confirmBoxContent p {
@@ -49,8 +41,6 @@
     transition: 1s all;
     background: #aa9583bb;
     background-blend-mode: normal;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     color: white;
 }
 
@@ -71,12 +61,6 @@
     border-radius: 32px;
     background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(211,211,211,0.7) 100%);
     background-blend-mode: normal;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.349);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 

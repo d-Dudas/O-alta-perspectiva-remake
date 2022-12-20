@@ -21,10 +21,10 @@
         include "./background.html";
     ?>
     <div id="confirmBox">
-        <div id="confirmBoxContent">
+        <div id="confirmBoxContent" class = "centerH heavyBlur fiveShadow flexClmEvn">
             <div><iconify-icon id="emailSentIcon" icon = "bi:send-check"></div>
             <p>A fost trimis un mail cu un link pentru schimbarea parolei.</p>
-            <a id = "homeBtn" href="./home.php">Pagina principală</a>
+            <a id = "homeBtn" class = "fiveShadow" href="./home.php">Pagina principală</a>
         </div>
     </div>
     <?php 

@@ -28,7 +28,7 @@
         include "./background.html";
     ?>
     <div id="formBox">
-        <form id="changePasswordForm" method="POST" action="./includes/changePassword.inc.php">
+        <form id="changePasswordForm" class="centerH heavyBlur fiveShadow flexClmEvn" method="POST" action="./includes/changePassword.inc.php">
             <div class="inputBox">
                 <label for="pwd">
                     <input class="inputs" type="password" name="pwd" id="pwd" placeholder="Parola nouă" maxlength=15>
@@ -37,7 +37,7 @@
                     <iconify-icon id="pwdEyeIcon" icon="clarity:eye-hide-line" style="color: black; font-size: 1.5rem">
                 </div>
             </div>
-            <div id="pwdConditions">
+            <div id="pwdConditions" class = "flexClmEvn">
                 <div class="pwdCondition">
                     <div>
                         <iconify-icon id="pwdCLength" icon="akar-icons:circle-x-fill"
@@ -77,10 +77,10 @@
             </div>
             <input type="hidden" name="email" value = <?php echo $_GET["email"]?>>
             <input type="hidden" name="vkey" value = <?php echo $_GET["vkey"]?>>
-            <input type="submit" value="Schimbă parola" id="submitBtn">
+            <input type="submit" value="Schimbă parola" id="submitBtn" class = "fiveShadow">
         </form>
     </div>
-    <div id="informatiiGenerale">
+    <div id="informatiiGenerale" class="lightBlur fiveShadow flexClmEvn">
         <p>Pentru un cont securizat, vă recomandăm să folosiți o parolă puternică, de lungimea între 8 și 15 caractere, cu cel puțin o cifră și cel puțin o literă majuscula. Pentru a parolă mai sigură, puteți folosi și caracterele : .-_ </p>
 
         <p>Vă sugerăm să nu alegeți o parolă similară cu adresa de mail.</p>

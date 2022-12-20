@@ -19,7 +19,7 @@
         include "./background.html";
     ?>
     <div id="contactBox">
-        <form method = "POST" action="./includes/sendMessage.inc.php" id="contactForm">
+        <form method = "POST" action="./includes/sendMessage.inc.php" id="contactForm" class = "heavyBlur flexClmEvn fiveShadow centerH">
             <input type="text" id="name" name="name" placeholder="Nume...">
             <?php
                 if(isset($_SESSION['email']))
@@ -29,12 +29,12 @@
                             <p id = "emailAlert">Adresă mail invalidă</p>';
             ?>
             <label for="mesaj">
-                <textarea name="mesaj" id="mesaj" cols="30" rows="10" placeholder="Mesajul dumneavoastră..."></textarea>
+                <textarea class = "centerH" name="mesaj" id="mesaj" cols="30" rows="10" placeholder="Mesajul dumneavoastră..."></textarea>
             </label>
             <input type="submit" value="Trimite">
         </form>
     </div>
-    <div id="informatiiGenerale">
+    <div id="informatiiGenerale" class = "heavyBlur fiveShadow flexClmEvn">
         <p>De asemenea, ne găsiți și pe următoarele platforme:</p>
 
         <a href = "https://www.facebook.com" target = "_blank"><iconify-icon class = "socialPlatformIcon" icon = "bi:facebook"></iconify-icon> Facebook</a>
