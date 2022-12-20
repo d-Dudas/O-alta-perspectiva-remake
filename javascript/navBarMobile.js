@@ -1,21 +1,32 @@
-if(window.matchMedia("(max-width: 1000px)").matches) {
-    $("#navBarMobile").css("display", "block");
-    let accBtns = $("#buttons");
-    accBtns.remove();
-    $("#navBarMobile").append(accBtns);
-    $("#controlPanelBtn").css("right", "auto");
-    if(window.location.search.substring(1).includes("login=show")) 
-        setTimeout(() => {
-            $("#textBox").css("top", "100%");
-            $("#slideBar").css("display", "flex");
-            $("#slideBar").css("top", "-100vh");
-        }, 500);
-    if(window.location.search.substring(1).includes("register=show")) 
-        setTimeout(() => {
-            $("#textBox").css("top", "100%");
-            $("#slideBar").css("display", "flex");
-            $("#slideBar").css("top", "-200vh");
-        }, 500);
+function showNavBar() {
+    if(window.matchMedia("(max-width: 1000px)").matches) {
+        $("#navBarMobile").css("display", "block");
+        let accBtns = $("#buttons");
+        accBtns.remove();
+        $("#navBarMobile").append(accBtns);
+        accBtns.css("display", "none");
+        $("#controlPanelBtn").css("right", "auto");
+        if(window.location.search.substring(1).includes("login=show")) 
+            setTimeout(() => {
+                $("#textBox").css("top", "100%");
+                $("#slideBar").css("display", "flex");
+                $("#slideBar").css("top", "-100vh");
+            }, 500);
+        if(window.location.search.substring(1).includes("register=show")) 
+            setTimeout(() => {
+                $("#textBox").css("top", "100%");
+                $("#slideBar").css("display", "flex");
+                $("#slideBar").css("top", "-200vh");
+            }, 500);
+    } else 
+        if($("#navBarMobile").css("display") == "block") {
+            $("#navBarMobile").css("display", "none");
+            let accBtns = $("#buttons");
+            accBtns.remove();
+            $("body").prepend(accBtns);
+            accBtns.css("display", "flex");
+            $("#controlPanelBtn").css("right", "-15%");
+        }
 }
 
 function openDropMenuAnimation() {
@@ -79,5 +90,10 @@ $("#dropMenuButton").click(function (e) {
         closeDropMenuAnimation();
     }
     
+});
+
+showNavBar();
+$(window).resize(function () { 
+    showNavBar();
 });
 

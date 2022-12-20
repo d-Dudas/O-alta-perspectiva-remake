@@ -1,7 +1,7 @@
 let fileIsOk = 0;
 
 $("#article-upload").change(function () {
-    var fileExtension = ['pdf', 'docx', 'doc'];
+    var fileExtension = ['pdf', 'docx', 'doc', 'txt'];
     if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {;
         $("#formatAlert").css("display", "initial");
         $("#noContentAlert").css("display", "none");
