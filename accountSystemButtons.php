@@ -16,11 +16,13 @@
                 $username = mysqli_fetch_assoc($result);
                 $id = $username['id'];
                 $ifAdmin = $username['ifAdmin'];
+                $preferences = json_decode($username['preferences']);
                 $username = $username["username"];
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $e;
                 $_SESSION['id'] = $id;
                 $_SESSION['ifAdmin'] = $ifAdmin;
+                $_SESSION['preferences'] = $preferences;
             }
         }
         $conn->close();

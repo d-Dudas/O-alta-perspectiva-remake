@@ -17,6 +17,7 @@
         include './navBar.html';
         include './navBarMobile.html';
         include "./accountSystemButtons.php";
+        include "./accountSettings.php";
         include "./background.html";
     ?>
 
@@ -43,6 +44,8 @@
 </body>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Account sttings javascript -->
+<script src="./javascript/accountSettings.js"></script>
 <!-- Nav bar for mobile devices javascript -->
 <script src="./javascript/navBarMobile.js"></script>
 </html>

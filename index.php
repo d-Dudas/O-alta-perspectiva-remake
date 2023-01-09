@@ -18,6 +18,7 @@
         // If the browser has any cookies saved with a login data, then
         //the user is automatically logged in
         include "./accountSystemButtons.php";
+        include "./accountSettings.php";
         if(isset($_COOKIE["email"]) && isset($_COOKIE["username"]) && isset($_COOKIE["cookieKey"]) && isset($_SESSION['username'])) {
             if($_COOKIE['username'] == $_SESSION['username']){
                 header("location: ./home.php");
@@ -195,6 +196,8 @@
 <script src="./javascript/indexPage.js"></script>
 <!-- Account system buttons javascript -->
 <script src="./javascript/accountSystemButtons.js"></script>
+<!-- Account sttings javascript -->
+<script src="./javascript/accountSettings.js"></script>
 <!-- Nav bar for mobile devices javascript -->
 <script src="./javascript/navBarMobile.js"></script>
 

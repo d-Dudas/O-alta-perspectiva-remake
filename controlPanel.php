@@ -20,6 +20,7 @@
 <body>
     <?php
         include './accountSystemButtons.php';
+        include "./accountSettings.php";
         include './navBar.html';
         include './navBarMobile.html';
         include './background.html';
@@ -263,6 +264,8 @@ ClassicEditor
 <script src="./javascript/controlPanel.js"></script>
 <!-- Account system buttons javascript -->
 <script src="javascript/accountSystemButtons.js"></script>
+<!-- Account sttings javascript -->
+<script src="./javascript/accountSettings.js"></script>
 <!-- Nav bar for mobile devices javascript -->
 <script src="./javascript/navBarMobile.js"></script>
 
