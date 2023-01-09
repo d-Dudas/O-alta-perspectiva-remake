@@ -44,8 +44,8 @@
                 echo '
                 <a href = "./articol.php?id='.$articles[1]["id"].'" class = "article-a"><div id = "article2" class = "articles" style = "background-image: url('.substr($articles[1]["poster"], 1, strlen($articles[1]["poster"])).'); background-position: '.$articles[1]["posterPosition"].'">
                     <div class = "articlePreview articlePreviewSmall">
-                        <div class = "articleTitle articleTitleSmall"><p>'.$articles[1]["titlu"].'</p></div>
-                        <div class = "articleText"><p>'.$articles[1]["text"].'</p></div>
+                        <div class = "articleTitle articleTitleSmall heavyBlur"><p>'.$articles[1]["titlu"].'</p></div>
+                        <div class = "articleText heavyBlur"><p>'.$articles[1]["text"].'</p></div>
                     </div>
                 </div></a>
 
@@ -53,8 +53,8 @@
                 echo '
                 <a href = "./articol.php?id='.$articles[2]["id"].'" class = "article-a"><div id = "article3" class = "articles" style = "background-image: url('.substr($articles[2]["poster"], 1, strlen($articles[2]["poster"])).'); background-position: '.$articles[2]["posterPosition"].'">
                     <div class = "articlePreview articlePreviewSmall">
-                        <div class = "articleTitle articleTitleSmall"><p>'.$articles[2]["titlu"].'</p></div>
-                        <div class = "articleText"><p>'.$articles[2]["text"].'</p></div>
+                        <div class = "articleTitle articleTitleSmall heavyBlur"><p>'.$articles[2]["titlu"].'</p></div>
+                        <div class = "articleText heavyBlur"><p>'.$articles[2]["text"].'</p></div>
                     </div>
                 </div></a>
 

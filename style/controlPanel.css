@@ -61,6 +61,8 @@
     font-weight: 700;
     font-size: 2vmin;
     color: rgb(51, 51, 51);
+
+    cursor: pointer;
 }
 
 .menuButton:last-child {
@@ -199,6 +201,10 @@ input:focus, button:focus {
     align-items: center;
 }
 
+#dateArticol label input {
+    width: 100%;
+}
+
 #pozitionareImagine {
     position: absolute;
     top: 0px;
@@ -232,6 +238,14 @@ input:focus, button:focus {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+#artCategory , #editArtCategory{
+    position: absolute !important;
+    top: 30%;
+    left: 85%;
+    width: 13% !important;
+    height: 6% !important;
 }
 
 .ck-editor__editable {
@@ -478,6 +492,75 @@ label[for="sendButton"] p {
 
 .mesajTrimisBox:last-child * {
     border-bottom: none;
+}
+
+/* Select style */
+
+#rcmdArtCategory, #artCategory, #editArtCategory{
+  position: relative;
+  font-family: Arial;
+  width: 20%;
+  height: 10%;
+  box-sizing: border-box;
+  font-size: 120%;
+  text-align: center;
+  background-color: #fff;
+  border: 0px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+#rcmdArtCategory select, #artCategory select, #editArtCategory select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*

@@ -37,6 +37,7 @@ else
 $titlu = $_POST["titlu"];
 $autor = $_POST["author"];
 $text = $_POST["articleText"];
+$category = $_POST["editArtCategory"];
 
 $poster = uploadImage();
 if($poster == "../images/0.")
@@ -46,7 +47,7 @@ else {
 }
 
 $conn = dbConnect();
-$conn->query("UPDATE articles SET titlu = '$titlu', autor='$autor', text='$text', poster='$poster', posterPosition='$posterPosition' WHERE id = '$id'");
+$conn->query("UPDATE articles SET titlu = '$titlu', autor='$autor', text='$text', poster='$poster', posterPosition='$posterPosition', category = '$category' WHERE id = '$id'");
 
 $conn->close();
 

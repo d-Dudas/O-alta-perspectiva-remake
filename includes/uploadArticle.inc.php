@@ -27,12 +27,13 @@ if(isset($_POST["titlu"])) {
     $autor = $_POST["author"];
     $text = $_POST["articleText"];
     $posterPosition = $_POST["position"];
+    $category = $_POST["artCategory"];
     $poster = uploadImage();
     $uploadedBy = $_POST["uploadedBy"];
     $conn = dbConnect();
     $data = date("y-m-d H:i:s");
-    $insert = $conn->query("INSERT INTO articles (titlu, autor, text, poster, posterPosition, uploadedBy, uploadDate) VALUES ('$titlu', '$autor','$text','$poster', '$posterPosition
-    ', '$uploadedBy', '$data')");
+    $insert = $conn->query("INSERT INTO articles (titlu, autor, text, poster, posterPosition, uploadedBy, uploadDate, category) VALUES ('$titlu', '$autor','$text','$poster', '$posterPosition
+    ', '$uploadedBy', '$data', '$category')");
     $conn->close();
     if($insert){
         header("location: ../home.php");

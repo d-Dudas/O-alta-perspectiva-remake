@@ -60,8 +60,11 @@ if($pwd != $u['password']){
     header("location:../home.php?showAccSettings=true&error=changeUsernamePwd");
     die();
 }
+$u = $u["username"];
 
 $conn->query("UPDATE accounts SET username = '$newUsr' WHERE id = '$usrId'");
+$conn->query("UPDATE comments SET username = '$newUsr' WHERE username = '$u'");
+
 $conn->close();
 session_start();
 $_SESSION["username"] = $newUsr;

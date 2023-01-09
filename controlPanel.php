@@ -59,7 +59,7 @@
         <!-- Form pentru a încărca un articol nou -->
         <form class="selectedPanelElements centerH lightBlur fiveShadow" id="addArticle" method="POST" action="./includes/uploadArticle.inc.php"
             enctype="multipart/form-data">
-            <div id="dateArticol">
+            <div id="dateArticol" class = "flexClmEvn">
                 <label for="titlu">
                     <input type="text" name="titlu" id="titlu" placeholder="Titlu">
                 </label>
@@ -90,6 +90,16 @@
             <label for="articleText">
                 <textarea name="articleText" id="articleText" cols="30" rows="10"></textarea>
             </label>
+            <select name="artCategory" id="artCategory">
+                <option value="international">Internațional</option>
+                <option value="politic">Politic</option>
+                <option value="educatie">Educație</option>
+                <option value="sanatate">Sănătate</option>
+                <option value="opinii">Opinii</option>
+                <option value="infrastructura">Infrastructură</option>
+                <option value="administratie">Administrație</option>
+                <option value="cultura">Cultură</option>
+            </select>
             <label for="sendButton">
                 <p>Trimite</p>
                 <button type="submit" name="sendButton" id="sendButton">
@@ -183,6 +193,16 @@
                 <input type="text" name="suggestionPoster" id="suggestionPoster" placeholder="Link poster articol...">
                 <input type="text" name="suggestionLink" id="suggestionLink" placeholder="Link articol...">
                 <input type="hidden" name="suggestionUploadedBy" value="<?php echo $_SESSION['username']; ?>">
+                <select name="rcmdArtCategory" id="rcmdArtCategory">
+                    <option value="international">Internațional</option>
+                    <option value="politic">Politic</option>
+                    <option value="educatie">Educație</option>
+                    <option value="sanatate">Sănătate</option>
+                    <option value="opinii">Opinii</option>
+                    <option value="infrastructura">Infrastructură</option>
+                    <option value="administratie">Administrație</option>
+                    <option value="cultura">Cultură</option>
+                </select>
                 <input type="submit" value="Trimite">
             </div>
         </form>
@@ -225,6 +245,16 @@
                         <label for="articleText">
                             <textarea name="articleText" id="articleTextEditor" cols="30" rows="10">'.$article['text'].'</textarea>
                         </label>
+                        <select name="editArtCategory" id="editArtCategory">
+                            <option value="international">Internațional</option>
+                            <option value="politic">Politic</option>
+                            <option value="educatie">Educație</option>
+                            <option value="sanatate">Sănătate</option>
+                            <option value="opinii">Opinii</option>
+                            <option value="infrastructura">Infrastructură</option>
+                            <option value="administratie">Administrație</option>
+                            <option value="cultura">Cultură</option>
+                        </select>
                         <label for="sendButton">
                             <p>Trimite</p>
                             <button type="submit" name="sendButton" id="sendButton" class = "lightBlur fiveShadow">
