@@ -19,7 +19,7 @@ if(isset($_POST['email'])){
 
     $p = md5($p);
 
-    $u = $conn->query("SELECT id, username, password, ifAdmin, verified, vkey FROM accounts WHERE email = '$e' LIMIT 1");
+    $u = $conn->query("SELECT id, username, password, ifAdmin, verified, vkey, preferences FROM accounts WHERE email = '$e' LIMIT 1");
     if($u) {
         if($u->num_rows > 0) {
             $u = mysqli_fetch_assoc($u);
@@ -40,11 +40,13 @@ if(isset($_POST['email'])){
             $id = $u['id'];
             $ifAdmin = $u['ifAdmin'];
             $u = $u['username'];
+            $preferences = json_decode($u['preferences']);
 
             session_start();
             $_SESSION['username'] = $u;
             $_SESSION['id'] = $id;
             $_SESSION['ifAdmin'] = $ifAdmin;
+            $_SESSION['preferences'] = $preferences;
             if(isset($_POST['keepSignedIn'])) {
                 if($_POST['keepSignedIn'] == "on"){
                     $cookieKey = md5(time().$u);

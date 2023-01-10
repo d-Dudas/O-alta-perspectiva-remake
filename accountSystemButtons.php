@@ -13,11 +13,11 @@
         if($result){
             if($result->num_rows > 0) {
                 $result = $conn->query("SELECT * FROM accounts WHERE email = '$e' AND username = '$u' LIMIT 1");
-                $username = mysqli_fetch_assoc($result);
-                $id = $username['id'];
-                $ifAdmin = $username['ifAdmin'];
-                $preferences = json_decode($username['preferences']);
-                $username = $username["username"];
+                $result = mysqli_fetch_assoc($result);
+                $id = $result['id'];
+                $ifAdmin = $result['ifAdmin'];
+                $preferences = json_decode($result['preferences']);
+                $username = $result["username"];
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $e;
                 $_SESSION['id'] = $id;
